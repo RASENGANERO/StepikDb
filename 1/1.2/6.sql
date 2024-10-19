@@ -1,0 +1,1 @@
+select author, title, round(if (author = 'Булгаков М.А.', price * 1.1, if (author = 'Есенин С.А.', price * 1.05, price)), 2) as new_price from book;
